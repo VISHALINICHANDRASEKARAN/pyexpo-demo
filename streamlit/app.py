@@ -6,7 +6,7 @@ name = st.text_input("Student Name")
 age = st.number_input("Age", min_value=1, max_value=100)    
 if st.button("Add Student"):
     if name and age :
-        new_student = {"Name": name, "Age": age}
+        new_student = {"Name": name, "Age": age,}
         if 'students' not in st.session_state:
             st.session_state['students'] = []
         st.session_state['students'].append(new_student)
